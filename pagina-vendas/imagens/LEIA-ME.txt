@@ -1,0 +1,10 @@
+Coloque aqui as imagens da página de vendas.
+
+Arquivos que o index.html espera (nomes referenciados no HTML):
+
+  og.jpg      1200 x 630 px  — imagem de compartilhamento (WhatsApp, redes)
+  autor.jpg   quadrada, ~400 x 400 px — foto de quem escreveu o guia
+                (opcional; troque a <div class="face"> por <img class="face">)
+
+Dica: exporte em JPG ou WebP, comprima antes de subir (tinypng.com, squoosh.app).
+Este arquivo pode ser apagado — serve só para manter a pasta no repositório.

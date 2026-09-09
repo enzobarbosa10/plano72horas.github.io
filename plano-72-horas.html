@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plano 72 Horas — sua casa preparada para temporal, apagão e seca</title>
+<meta name="description" content="O checklist que prepara sua família para os três dias em que você fica por conta própria. Água, energia, comida, comunicação e documentos. R$37, acesso imediato.">
+
+<!-- compartilhamento (troque a URL da imagem por uma sua, 1200x630) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sua casa aguenta 72 horas?">
+<meta property="og:description" content="O checklist que prepara sua família para temporal, apagão e seca extrema — montado em quatro compras do mês.">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#122019;
+  --ink-soft:#4a5a52;
+  --paper:#e9eeea;
+  --paper-pure:#f5f8f6;
+  --night:#0d1a14;
+  --night-2:#16281f;
+  --mark:#ff5a1f;
+  --line:#c3cec7;
+  --line-dark:#2c4034;
+  --wrap:66rem;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Public Sans',system-ui,sans-serif;
+  font-size:clamp(1rem,.96rem + .2vw,1.125rem);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.display{font-family:'Bricolage Grotesque',system-ui,sans-serif;line-height:1.02;letter-spacing:-.02em;font-weight:800}
+h1{font-size:clamp(2.3rem,1.4rem + 4.2vw,4.6rem)}
+h2{font-size:clamp(1.8rem,1.3rem + 2.2vw,3rem);margin-bottom:1.2rem}
+h3{font-size:1.22rem;font-weight:700;letter-spacing:-.01em;line-height:1.25}
+p{max-width:62ch}
+a{color:inherit}
+.wrap{width:100%;max-width:var(--wrap);margin-inline:auto;padding-inline:1.5rem}
+section{padding-block:clamp(3.5rem,2rem + 6vw,7rem)}
+
+/* ---------- seasonal ribbon ---------- */
+.season{
+  background:var(--night-2);color:#b9cbc1;
+  border-bottom:1px solid var(--line-dark);
+  font-size:.86rem;line-height:1.4;text-align:center;
+  padding:.6rem 1.5rem;
+}
+.season strong{color:#fff;font-weight:600}
+
+/* ---------- hero ---------- */
+.hero{
+  background:var(--night);
+  color:var(--paper-pure);
+  padding-block:clamp(3rem,1.5rem + 7vw,6.5rem);
+  border-bottom:1px solid var(--line-dark);
+}
+.hero-grid{display:grid;gap:clamp(2.5rem,1rem + 5vw,4.5rem);grid-template-columns:1fr}
+@media(min-width:60rem){.hero-grid{grid-template-columns:1.05fr .95fr;align-items:start}}
+.scene{
+  font-family:'Bricolage Grotesque',sans-serif;
+  font-weight:500;font-size:clamp(1rem,.9rem + .5vw,1.2rem);
+  color:#8fae9d;margin-bottom:1.4rem;line-height:1.45;max-width:34ch;
+}
+.hero h1{color:#fff;text-wrap:balance}
+.hero h1 .q{display:block}
+.hero-sub{margin-top:1.6rem;color:#b9cbc1;max-width:46ch}
+.cta-row{margin-top:2.2rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
+.btn{
+  display:inline-block;background:var(--mark);color:#1a0b04;
+  font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:1.06rem;
+  padding:1rem 1.9rem;border:none;border-radius:2px;text-decoration:none;
+  transition:background .15s ease;cursor:pointer;
+}
+.btn:hover,.btn:focus-visible{background:#ff7440}
+.btn-note{font-size:.92rem;color:#8fae9d}
+.hero-reassure{margin-top:1rem;font-size:.86rem;color:#8fae9d}
+
+/* ---------- the list object ---------- */
+.card-list{
+  background:var(--paper-pure);color:var(--ink);
+  padding:clamp(1.6rem,1rem + 2vw,2.4rem);
+  box-shadow:0 24px 50px -28px rgba(0,0,0,.85);
+  transform:rotate(-.5deg);
+}
+.card-list .cap{
+  font-family:'Bricolage Grotesque',sans-serif;font-weight:700;
+  font-size:1.05rem;padding-bottom:.9rem;margin-bottom:1.1rem;
+  border-bottom:2px solid var(--ink);
+}
+.card-list .cap span{display:block;font-weight:500;font-size:.9rem;color:var(--ink-soft);margin-top:.25rem}
+ul.check{list-style:none;display:grid;gap:.62rem}
+ul.check li{font-size:.98rem;line-height:1.4}
+ul.check li.static{display:grid;grid-template-columns:1.15rem 1fr;gap:.75rem;align-items:start}
+ul.check li.static::before{
+  content:"";width:1.15rem;height:1.15rem;margin-top:.12rem;
+  border:1.5px solid var(--line);background:transparent;
+}
+ul.check li.static.on::before{
+  border-color:var(--mark);background:var(--mark);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 8.6l3 3 6-6.6' fill='none' stroke='%231a0b04' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-size:100%;
+}
+/* interactive self-check */
+ul.check li button{
+  width:100%;text-align:left;background:none;border:0;cursor:pointer;font:inherit;color:inherit;
+  display:grid;grid-template-columns:1.15rem 1fr;gap:.75rem;align-items:start;
+  padding:.18rem .2rem;margin:-.18rem -.2rem;border-radius:2px;
+}
+ul.check li button::before{
+  content:"";width:1.15rem;height:1.15rem;margin-top:.12rem;
+  border:1.5px solid var(--line);background:transparent;transition:background .12s ease,border-color .12s ease;
+}
+ul.check li button:hover::before{border-color:var(--mark)}
+ul.check li button[aria-pressed="true"]::before{
+  border-color:var(--mark);background:var(--mark);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 8.6l3 3 6-6.6' fill='none' stroke='%231a0b04' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-size:100%;
+}
+ul.check li button[aria-pressed="true"]{color:var(--ink-soft)}
+.tally{
+  font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:1rem;
+  margin-top:1.2rem;padding-top:1rem;border-top:2px solid var(--ink);
+}
+.tally strong{color:var(--mark)}
+.card-foot{margin-top:.8rem;font-size:.9rem;color:var(--ink-soft)}
+
+/* ---------- generic blocks ---------- */
+.lede{font-size:clamp(1.1rem,1rem + .5vw,1.32rem);line-height:1.5;max-width:52ch}
+.muted{color:var(--ink-soft)}
+.rule{height:1px;background:var(--line);border:0}
+.eyebrow{
+  font-family:'Bricolage Grotesque',sans-serif;font-weight:700;
+  font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--mark);margin-bottom:.9rem;
+}
+
+/* pillars */
+.pillars{display:grid;gap:0;margin-top:2.5rem;border-top:1px solid var(--line)}
+.pillar{
+  display:grid;grid-template-columns:2.6rem 1fr;gap:1.4rem;
+  padding-block:1.55rem;border-bottom:1px solid var(--line);align-items:start;
+}
+@media(min-width:48rem){.pillar{grid-template-columns:2.6rem 13rem 1fr;gap:1.8rem;align-items:baseline}}
+.num{
+  font-family:'Bricolage Grotesque',sans-serif;font-weight:800;
+  font-size:1.5rem;color:var(--mark);line-height:1;
+}
+.pillar p{font-size:.99rem;color:var(--ink-soft);max-width:52ch}
+
+/* scenarios */
+.scenarios{display:grid;gap:1.6rem;margin-top:2.5rem}
+@media(min-width:52rem){.scenarios{grid-template-columns:repeat(3,1fr);gap:2.2rem}}
+.scen{border-top:3px solid var(--ink);padding-top:1.1rem}
+.scen h3{margin-bottom:.5rem}
+.scen p{font-size:.97rem;color:var(--ink-soft)}
+.when{font-size:.85rem;color:var(--mark);font-weight:600;margin-bottom:.55rem}
+
+/* inside / índice */
+.inside{margin-top:2.5rem;border-top:1px solid var(--line)}
+.inside-row{
+  display:grid;grid-template-columns:2.4rem 1fr;gap:1.1rem;align-items:baseline;
+  padding-block:1.15rem;border-bottom:1px solid var(--line);
+}
+@media(min-width:48rem){.inside-row{grid-template-columns:2.4rem 14rem 1fr;gap:1.6rem}}
+.inside-row .n{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;color:var(--mark);font-size:.95rem}
+.inside-row h3{font-size:1.05rem}
+.inside-row p{font-size:.93rem;color:var(--ink-soft);margin-top:.15rem;max-width:52ch}
+
+/* fit */
+.fit{display:grid;gap:2.4rem;margin-top:2.5rem}
+@media(min-width:48rem){.fit{grid-template-columns:1fr 1fr;gap:3.5rem}}
+.fit h3{margin-bottom:1rem}
+.fit ul{list-style:none;display:grid;gap:.7rem}
+.fit li{padding-left:1.5rem;position:relative;font-size:.99rem}
+.fit li::before{position:absolute;left:0;top:-.02em;font-weight:700}
+.yes li::before{content:"+";color:var(--mark)}
+.no li{color:var(--ink-soft)}
+.no li::before{content:"–";color:var(--line)}
+
+/* proof / depoimentos */
+.quotes{display:grid;gap:1.8rem;margin-top:2.5rem}
+@media(min-width:52rem){.quotes{grid-template-columns:repeat(3,1fr);gap:2.2rem}}
+.quote{border-left:3px solid var(--mark);padding-left:1.2rem}
+.quote p{font-size:.98rem}
+.quote .who{margin-top:.8rem;font-size:.85rem;color:var(--ink-soft);font-weight:600}
+
+/* author */
+.author{margin-top:2.5rem;display:grid;gap:1.4rem}
+@media(min-width:44rem){.author{grid-template-columns:5rem 1fr;gap:2rem;align-items:start}}
+.author .face{
+  width:5rem;height:5rem;border-radius:50%;background:var(--night);
+  display:grid;place-items:center;font-family:'Bricolage Grotesque',sans-serif;
+  font-weight:800;color:var(--paper-pure);font-size:1.4rem;
+}
+.author p{font-size:.99rem;color:var(--ink-soft)}
+.author p + p{margin-top:.8rem}
+
+/* price */
+.price-sec{background:var(--night);color:var(--paper-pure)}
+.price-sec h2{color:#fff}
+.price-box{
+  margin-top:2.2rem;border:1px solid var(--line-dark);background:var(--night-2);
+  padding:clamp(1.8rem,1.2rem + 2.5vw,3rem);display:grid;gap:2rem;
+}
+@media(min-width:48rem){.price-box{grid-template-columns:1fr auto;align-items:center;gap:3rem}}
+.price-tag{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(3rem,2rem + 5vw,5rem);color:#fff;line-height:.9}
+.price-tag small{display:block;font-size:.95rem;font-weight:500;color:#8fae9d;margin-top:.7rem;letter-spacing:0}
+.price-box ul.check li{color:var(--paper-pure)}
+.price-box ul.check li.static::before{border-color:#3d5849}
+.price-box ul.check li.static.on::before{border-color:var(--mark)}
+.anchor-note{margin-top:1.4rem;font-size:.92rem;color:#8fae9d;max-width:52ch}
+.trust{
+  margin-top:1.8rem;display:flex;flex-wrap:wrap;gap:.9rem 2rem;
+  font-size:.88rem;color:#8fae9d;
+}
+.trust span{display:flex;gap:.5rem;align-items:center}
+.trust svg{width:1.05rem;height:1.05rem;flex-shrink:0;stroke:var(--mark);fill:none;stroke-width:2}
+.guarantee{margin-top:1.6rem;font-size:.93rem;color:#8fae9d;max-width:56ch}
+
+/* faq */
+details{border-bottom:1px solid var(--line);padding-block:1.15rem}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{
+  cursor:pointer;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;
+  font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;gap:1.5rem;align-items:center;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--mark);font-size:1.5rem;line-height:1;flex-shrink:0}
+details[open] summary::after{content:"–"}
+details p{margin-top:.8rem;color:var(--ink-soft);font-size:.99rem}
+
+/* close */
+.close{text-align:center}
+.close h2{max-width:20ch;margin-inline:auto;text-wrap:balance}
+.close p{margin-inline:auto;text-align:center}
+footer{padding-block:2.5rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--ink-soft)}
+footer p{max-width:70ch}
+@media(max-width:48rem){footer{padding-bottom:5.5rem}}
+
+/* sticky cta */
+.sticky-cta{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;
+  background:var(--night);border-top:1px solid var(--line-dark);
+  padding:.7rem 1.5rem;
+  display:flex;gap:1rem;align-items:center;justify-content:space-between;
+  transform:translateY(110%);transition:transform .25s ease;
+}
+.sticky-cta.show{transform:none}
+.sticky-cta .sc-text{color:#b9cbc1;font-size:.9rem;line-height:1.3}
+.sticky-cta .sc-text strong{color:#fff;font-family:'Bricolage Grotesque',sans-serif;font-weight:700}
+.sticky-cta .btn{padding:.72rem 1.35rem;font-size:1rem;white-space:nowrap}
+@media(max-width:30rem){.sticky-cta .sc-long{display:none}}
+
+/* reveal on scroll */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}
+.reveal.in{opacity:1;transform:none}
+
+:focus-visible{outline:2px solid var(--mark);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="season" id="season">
+  <strong>Umidade baixa e queimada</strong> na maior parte do Brasil neste mês. Boa hora para montar o plano.
+</div>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="scene">São 19h de uma quinta-feira. O vento derruba um poste na sua rua. A luz volta depois de amanhã.</p>
+      <h1><span class="q">Sua casa</span><span class="q">aguenta 72 horas?</span></h1>
+      <p class="hero-sub">O Plano 72 Horas é o checklist que prepara sua família para temporal, apagão e seca extrema — montado em quatro compras do mês, sem apertar o orçamento.</p>
+      <div class="cta-row">
+        <a class="btn" href="#comprar">Quero o Plano 72 Horas</a>
+        <span class="btn-note">R$37 · acesso imediato</span>
+      </div>
+      <p class="hero-reassure">Pagamento único, sem assinatura · 7 dias de garantia · PDF por e-mail</p>
+    </div>
+
+    <div class="card-list">
+      <p class="cap">Sua casa, agora<span>Marque o que você já tem pronto em casa hoje.</span></p>
+      <ul class="check" id="selfcheck">
+        <li><button type="button" aria-pressed="false">Uma lanterna em algum lugar</button></li>
+        <li><button type="button" aria-pressed="false">Água guardada para três dias</button></li>
+        <li><button type="button" aria-pressed="false">Pilha reserva que você sabe onde está</button></li>
+        <li><button type="button" aria-pressed="false">Abridor de lata manual</button></li>
+        <li><button type="button" aria-pressed="false">Comida que não precisa de geladeira</button></li>
+        <li><button type="button" aria-pressed="false">Telefones importantes num papel</button></li>
+        <li><button type="button" aria-pressed="false">Remédio contínuo com reserva</button></li>
+        <li><button type="button" aria-pressed="false">Dinheiro trocado separado</button></li>
+        <li><button type="button" aria-pressed="false">Combinado de onde a família se encontra</button></li>
+      </ul>
+      <p class="tally">Você marcou <strong><span id="tallyNum">0</span> de 9</strong></p>
+      <p class="card-foot" id="cardFoot">Quase ninguém marca mais de duas. Não é descuido — é que ninguém nunca sentou para montar a lista.</p>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2 data-reveal>Por que 72 horas</h2>
+    <p class="lede" data-reveal>É o tempo que costuma separar o início de uma ocorrência do restabelecimento dos serviços. O intervalo em que você está por conta própria: energia fora, mercado fechado ou lotado, rua alagada, telefone congestionado.</p>
+    <p style="margin-top:1.4rem" class="muted" data-reveal>Não é sobre catástrofe. É sobre o temporal de quinta-feira, o apagão do bairro inteiro, a semana de setembro em que a umidade despenca e a criança acorda com o nariz sangrando. Coisas que acontecem todo ano, com hora marcada no calendário, e que ainda assim pegam quase todo mundo desprevenido.</p>
+  </div>
+</section>
+
+<section style="background:var(--paper-pure)">
+  <div class="wrap">
+    <h2 data-reveal>Os cinco pilares</h2>
+    <p class="lede muted" data-reveal>Se um deles falhar, os outros quatro perdem valor. Por isso o guia monta na ordem.</p>
+
+    <div class="pillars" data-reveal>
+      <div class="pillar">
+        <span class="num">1</span>
+        <h3>Água</h3>
+        <p>Quanto guardar por pessoa, como conservar sem estragar, como tratar se precisar — e por que contar só com a caixa d'água é o erro mais comum de todos.</p>
+      </div>
+      <div class="pillar">
+        <span class="num">2</span>
+        <h3>Energia e luz</h3>
+        <p>O que ter carregado, o que desligar quando a energia cai, como abrir o portão eletrônico na mão. E o que fazer se alguém em casa depende de aparelho elétrico.</p>
+      </div>
+      <div class="pillar">
+        <span class="num">3</span>
+        <h3>Comida</h3>
+        <p>Três dias sem geladeira nem fogão elétrico. Quanto tempo o freezer segura fechado, e a regra objetiva para decidir o que descartar sem depender do cheiro.</p>
+      </div>
+      <div class="pillar">
+        <span class="num">4</span>
+        <h3>Comunicação</h3>
+        <p>Como falar com a família quando a rede congestiona, o contato central fora da região, e como receber os alertas oficiais da Defesa Civil de graça.</p>
+      </div>
+      <div class="pillar">
+        <span class="num">5</span>
+        <h3>Documentos e saúde</h3>
+        <p>O que digitalizar, o que imprimir, quanto remédio manter de reserva e por que dinheiro trocado volta a importar quando a maquininha para.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 data-reveal>Um preparo, três cenários</h2>
+    <p class="lede muted" data-reveal>O guia traz o passo a passo de antes, durante e depois para cada um.</p>
+
+    <div class="scenarios" data-reveal>
+      <div class="scen">
+        <p class="when">Outubro a março</p>
+        <h3>Temporal e vendaval</h3>
+        <p>Queda de árvore, destelhamento, alagamento. O que recolher nas 24 horas antes do aviso, o que não fazer durante, e o que fotografar depois para o seguro.</p>
+      </div>
+      <div class="scen">
+        <p class="when">Qualquer mês do ano</p>
+        <h3>Apagão prolongado</h3>
+        <p>Os primeiros quinze minutos, as primeiras horas, e o que fazer passando de um dia. Inclui como registrar a ocorrência e como pedir ressarcimento de aparelho queimado.</p>
+      </div>
+      <div class="scen">
+        <p class="when">Junho a setembro</p>
+        <h3>Seca e fumaça</h3>
+        <p>Como ler o número da umidade e o que ele exige de você. Cuidados com criança pequena, idoso e quem tem problema respiratório nos dias de queimada.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--paper-pure)">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>O que tem dentro</p>
+    <h2 data-reveal>Índice do guia</h2>
+    <p class="lede muted" data-reveal>Nada de encher linguiça. Cada seção termina numa ação que você marca como feita.</p>
+
+    <div class="inside" data-reveal>
+      <div class="inside-row">
+        <span class="n">01</span>
+        <h3>Os cinco pilares</h3>
+        <p>Água, energia, comida, comunicação, documentos e saúde — com os números por pessoa e os erros mais comuns de cada um.</p>
+      </div>
+      <div class="inside-row">
+        <span class="n">02</span>
+        <h3>Os três cenários</h3>
+        <p>Temporal, apagão e seca. Antes, durante e depois de cada um, em passo a passo curto.</p>
+      </div>
+      <div class="inside-row">
+        <span class="n">03</span>
+        <h3>Plano de família</h3>
+        <p>Uma folha para preencher e colar no armário: contatos, ponto de encontro, quem busca quem, remédios de cada um.</p>
+      </div>
+      <div class="inside-row">
+        <span class="n">04</span>
+        <h3>Calendário anual de risco</h3>
+        <p>O que revisar em cada época do ano e as duas datas fixas para trocar água, pilha e remédio de reserva.</p>
+      </div>
+      <div class="inside-row">
+        <span class="n">05</span>
+        <h3>Plano de compra em quatro meses</h3>
+        <p>A lista dividida em quatro compras do mês, começando pelos itens mais baratos e mais úteis.</p>
+      </div>
+      <div class="inside-row">
+        <span class="n">06</span>
+        <h3>Checklist final de uma página</h3>
+        <p>Tudo condensado numa folha feita para imprimir e deixar na porta do armário ou na gaveta da cozinha.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 data-reveal>Para quem é</h2>
+    <div class="fit" data-reveal>
+      <div>
+        <h3>Faz sentido se você</h3>
+        <ul class="yes">
+          <li>Mora com criança pequena, idoso ou alguém com problema respiratório</li>
+          <li>Já passou por um apagão longo e percebeu que não sabia o que fazer</li>
+          <li>Quer resolver isso aos poucos, sem gastar tudo de uma vez</li>
+          <li>Prefere uma lista pronta a passar a tarde pesquisando</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Não faz sentido se você</h3>
+        <ul class="no">
+          <li>Procura conteúdo de sobrevivência na mata ou preparação para colapso</li>
+          <li>Já tem kit montado, reserva de água datada e plano de família escrito</li>
+          <li>Quer previsão do tempo — isso o app do seu celular já faz de graça</li>
+          <li>Espera que o guia faça a compra e monte o kit por você</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+  ================================================================
+  DEPOIMENTOS — substitua pelos comentários REAIS dos seus
+  primeiros leitores (com permissão). Não publique depoimento
+  fictício: além de enganar, quebra as regras das plataformas de
+  pagamento. Se ainda não tiver nenhum, apague esta seção inteira
+  até ter — uma página sem prova converte melhor que uma com prova
+  inventada.
+  ================================================================
+-->
+<section style="background:var(--paper-pure)">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Quem já montou</p>
+    <h2 data-reveal>O que dizem os primeiros leitores</h2>
+    <div class="quotes" data-reveal>
+      <div class="quote">
+        <p>[Espaço para o depoimento real de um cliente. Duas ou três frases sobre o que mudou depois de montar o plano.]</p>
+        <p class="who">— Nome, cidade/UF</p>
+      </div>
+      <div class="quote">
+        <p>[Espaço para o depoimento real de um cliente. Se possível, algo concreto: “no apagão de X, a gente já sabia o que fazer”.]</p>
+        <p class="who">— Nome, cidade/UF</p>
+      </div>
+      <div class="quote">
+        <p>[Espaço para o depoimento real de um cliente. Prints de WhatsApp com permissão também funcionam bem aqui.]</p>
+        <p class="who">— Nome, cidade/UF</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+  ================================================================
+  AUTOR — preencha com seus dados reais. A página inteira ganha
+  credibilidade quando o leitor sabe quem escreveu e por quê.
+  ================================================================
+-->
+<section>
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Quem escreveu</p>
+    <h2 data-reveal>Por que este guia existe</h2>
+    <div class="author" data-reveal>
+      <div class="face" aria-hidden="true">72</div>
+      <div>
+        <p>[Seu nome], [uma linha de credencial: formação, área de atuação, ou a experiência pessoal que te levou a montar isto — bombeiro voluntário, engenheiro, mãe que passou por um apagão de três dias, etc.]</p>
+        <p>[Um parágrafo curto: o que você viu acontecer, por que percebeu que faltava um material assim, e o compromisso do guia — orientação prática de casa, apoiada nas fontes oficiais, sem alarmismo.]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="price-sec" id="comprar">
+  <div class="wrap">
+    <h2 data-reveal>O que você leva</h2>
+    <div class="price-box" data-reveal>
+      <div>
+        <ul class="check">
+          <li class="static on">Guia completo dos cinco pilares, em PDF</li>
+          <li class="static on">Passo a passo dos três cenários: antes, durante e depois</li>
+          <li class="static on">Plano de família para preencher e colar no armário</li>
+          <li class="static on">Calendário anual de risco, com as duas datas de revisão</li>
+          <li class="static on">Plano de compra em quatro meses, para montar o kit sem apertar</li>
+          <li class="static on">Checklist final de uma página, feito para imprimir</li>
+        </ul>
+        <p class="anchor-note">R$37 é menos que uma lanterna e um pacote de pilhas comprados às pressas na véspera do temporal — e você monta o resto com calma, no ritmo da feira do mês.</p>
+      </div>
+      <div>
+        <p class="price-tag">R$37<small>Pagamento único. Acesso imediato.</small></p>
+        <a class="btn" href="#" style="margin-top:1.6rem" data-checkout>Comprar o Plano 72 Horas</a>
+        <div class="trust">
+          <span><svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>Compra segura</span>
+          <span><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 8-8"/><path d="M12 7v5l3 2"/></svg>Acesso na hora</span>
+          <span><svg viewBox="0 0 24 24"><path d="M3 8l9-5 9 5-9 5z"/><path d="M3 8v8l9 5 9-5V8"/></svg>7 dias de garantia</span>
+        </div>
+      </div>
+    </div>
+    <p class="guarantee">Sete dias de garantia. Se você abrir, ler e achar que não serve para a sua casa, peça o reembolso e ele é devolvido integralmente — sem precisar justificar.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 data-reveal>Perguntas</h2>
+    <details>
+      <summary>Isso não é a mesma coisa que as cartilhas da Defesa Civil?</summary>
+      <p>As cartilhas oficiais são boas e são gratuitas — o guia inclusive aponta para elas. A diferença é que estão espalhadas por vários órgãos, cada uma trata de um tema, e nenhuma vira uma lista de compras com prazo. O Plano 72 Horas reúne tudo numa sequência que você consegue executar em quatro meses.</p>
+    </details>
+    <details>
+      <summary>Moro em apartamento. Serve?</summary>
+      <p>Serve, e há partes escritas especificamente para isso: bomba d'água parada, elevador, portão eletrônico e o que combinar com a portaria e o síndico antes do temporal.</p>
+    </details>
+    <details>
+      <summary>Vou precisar gastar muito para montar o kit?</summary>
+      <p>Não de uma vez. O guia divide o kit em quatro compras mensais, começando pelos itens mais baratos e mais úteis. Boa parte do que ele pede você provavelmente já tem em casa, só não está no mesmo lugar nem com data de troca marcada.</p>
+    </details>
+    <details>
+      <summary>Como recebo?</summary>
+      <p>Por e-mail, logo após a confirmação do pagamento. É um PDF: você lê no celular e imprime a última página.</p>
+    </details>
+    <details>
+      <summary>E se eu não gostar?</summary>
+      <p>Você tem sete dias para pedir o reembolso. Basta responder o e-mail de compra; a devolução é integral e não pedimos justificativa.</p>
+    </details>
+    <details>
+      <summary>Preciso ter conhecimento técnico?</summary>
+      <p>Não. O guia é escrito para quem nunca parou para pensar nisso. Cada instrução é uma frase curta e uma ação — comprar, guardar, anotar, combinar.</p>
+    </details>
+  </div>
+</section>
+
+<section class="close" style="background:var(--paper-pure)">
+  <div class="wrap">
+    <h2 data-reveal>Você não vai lembrar disso quando a luz apagar.</h2>
+    <p class="lede muted" style="margin-top:1.2rem" data-reveal>Por isso a lista existe em papel. Faça hoje, enquanto está tudo tranquilo.</p>
+    <a class="btn" href="#" style="margin-top:2rem" data-checkout>Quero o Plano 72 Horas — R$37</a>
+    <p class="hero-reassure" style="color:var(--ink-soft);margin-top:1rem">Pagamento único · 7 dias de garantia · acesso imediato</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Plano 72 Horas é um material de orientação doméstica e não substitui as instruções dos órgãos oficiais. Em qualquer emergência, ligue para a Defesa Civil (199), o Corpo de Bombeiros (193) ou o SAMU (192).</p>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="stickyCta" aria-hidden="true">
+  <span class="sc-text"><strong>Plano 72 Horas</strong><span class="sc-long"> · R$37, pagamento único</span></span>
+  <a class="btn" href="#comprar">Quero o plano</a>
+</div>
+
+<script>
+(function(){
+  // ---------- checkout ----------
+  // Troque a URL abaixo pelo link do seu checkout (Hotmart, Kiwify, Cakto, etc.)
+  var CHECKOUT_URL = "#";
+  document.querySelectorAll('[data-checkout]').forEach(function(el){ el.href = CHECKOUT_URL; });
+
+  // ---------- autodiagnóstico ----------
+  var list = document.getElementById('selfcheck');
+  if(list){
+    var out = document.getElementById('tallyNum');
+    var foot = document.getElementById('cardFoot');
+    var msg = {
+      low:'Quase ninguém marca mais de duas. Não é descuido — é que ninguém nunca sentou para montar a lista.',
+      mid:'Melhor que a média. Ainda assim, veja quantos itens continuam em aberto — e sem data de troca.',
+      high:'Você já pensou nisso. O guia fecha os poucos buracos que sobraram e coloca tudo com data de revisão.'
+    };
+    var refresh = function(){
+      var n = list.querySelectorAll('button[aria-pressed="true"]').length;
+      out.textContent = n;
+      foot.textContent = n <= 2 ? msg.low : (n <= 5 ? msg.mid : msg.high);
+    };
+    list.querySelectorAll('button').forEach(function(b){
+      b.addEventListener('click', function(){
+        b.setAttribute('aria-pressed', b.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
+        refresh();
+      });
+    });
+    refresh();
+  }
+
+  // ---------- barra fixa ----------
+  var bar = document.getElementById('stickyCta');
+  var hero = document.querySelector('.hero');
+  if(bar && hero && 'IntersectionObserver' in window){
+    new IntersectionObserver(function(entries){
+      var show = !entries[0].isIntersecting;
+      bar.classList.toggle('show', show);
+      bar.setAttribute('aria-hidden', show ? 'false' : 'true');
+    }, {rootMargin:'-40px 0px 0px 0px'}).observe(hero);
+  }
+
+  // ---------- faixa sazonal ----------
+  var season = document.getElementById('season');
+  if(season){
+    var m = new Date().getMonth(); // 0 = janeiro
+    var txt;
+    if(m >= 9 || m <= 2){
+      txt = '<strong>Temporada de temporais e vendavais.</strong> Boa hora para revisar telhado, ralos e a lista de compras.';
+    } else if(m >= 5 && m <= 8){
+      txt = '<strong>Umidade baixa e queimada</strong> na maior parte do Brasil neste mês. Boa hora para montar o plano.';
+    } else {
+      txt = 'Fora da temporada crítica — <strong>a melhor época para montar o plano com calma.</strong>';
+    }
+    season.innerHTML = txt;
+  }
+
+  // ---------- revelar ao rolar ----------
+  if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var ro = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add('in'); ro.unobserve(en.target); }
+      });
+    }, {rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('[data-reveal]').forEach(function(el){
+      el.classList.add('reveal'); ro.observe(el);
+    });
+  }
+})();
+</script>
+</body>
+</html>
